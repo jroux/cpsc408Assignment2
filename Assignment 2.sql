@@ -1,5 +1,8 @@
+--Jessica Roux
+--Student ID: 2317255
+--Chapman Email: jroux@chapman.edu
+--Course: 408-01
 --Assignment 2
---check problem 8
 
 --Problem 1
 CREATE TABLE Player(
@@ -80,11 +83,3 @@ WHERE CustomerID IN
     (SELECT CustomerID
     FROM Customer
     WHERE SupportRepID = 3);
-
---BONUS
-SELECT BillingCountry, SUM(Total) AS SumTotals
-FROM Invoice
-GROUP BY BillingCountry;
-
-
-SELECT sqrt(avg(var))
